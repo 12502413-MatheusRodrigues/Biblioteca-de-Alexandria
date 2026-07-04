@@ -1,0 +1,140 @@
+ :root{
+    --verde-escuro: #1f4438;
+    --dourado: #c08a2e;
+    --texto: #c08a2e;
+    --branco: #ffffff;
+    --caixa-cinza: #d9d9d9;
+  }
+
+  *{ box-sizing: border-box; margin:0; padding:0; }
+
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--dourado);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header{
+    background: var(--verde-escuro);
+    display: flex;
+    align-items: center;
+    padding: 10px 32px;
+    gap: 40px;
+  }
+
+  .logo img{
+    height: 48px;
+    width: auto;
+    display: block;
+  }
+
+  nav{
+    display: flex;
+    gap: 32px;
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+
+  nav a{
+    color: var(--dourado);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  nav a:hover{ text-decoration: underline; }
+
+  main{
+    flex: 1;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .painel{
+    background: var(--branco);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1100px;
+    padding: 40px 48px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  }
+
+  .contato{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+
+  .rotulo{
+    font-size: 14px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 6px;
+  }
+
+  .caixa{
+    width: 100%;
+    background: var(--caixa-cinza);
+    border: none;
+    border-radius: 20px;
+    padding: 14px 18px;
+    font-size: 14px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 16px;
+  }
+  .caixa::placeholder{ color: #555; }
+
+  .linha-divisoria{
+    height: 3px;
+    background: var(--dourado);
+    border: none;
+    border-radius: 2px;
+    margin: 4px 0 20px;
+  }
+
+  textarea.caixa{
+    border-radius: 14px;
+    resize: vertical;
+    min-height: 120px;
+    margin-bottom: 24px;
+  }
+
+  .botao-enviar{
+    background: var(--verde-escuro);
+    color: var(--texto);
+    border: none;
+    padding: 12px 28px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', serif;
+    cursor: pointer;
+  }
+  .botao-enviar:hover{ opacity: 0.9; }
+
+  .coluna-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-info{
+    width: 190px;
+    height: 190px;
+    border-radius: 6px;
+    display: block;
+    margin-bottom: 20px;
+    object-fit: cover;
+  }
+
+  .info-texto{
+    font-size: 14px;
+    color: #111;
+    line-height: 1.6;
+  }
+
+  footer{
+    background: var(--verde-escuro);
+    height: 60px;
+  }
